@@ -1,0 +1,142 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: Zenkurenaido;
+    font-display: swap;
+    src: url("ZenKurenaido-Regular.ttf") format("TrueType");
+    }
+
+
+/*ノーマライズ*/
+h2{
+    background-color: #b9fcbd;
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #000000;/*文字色*/
+    border-left: solid 5px #0c7a1b;/*左線*/
+}
+
+
+body,html{
+    margin: 0;
+    font-family: 'Zenkurenaido', sans-serif;
+    font-size: 16px;
+    background-color: rgba(234, 255, 234, 0.692);
+}
+
+/*header*/
+header{
+    background-color: #ffffffaa;
+    position: fixed;
+    width: 100%;
+}
+    header h1{
+        text-align: center;
+        margin: 0;
+    }
+
+/*@header*/
+
+.catchcopy{
+    padding: 20vh 0 20vh 0;
+    margin: 0;
+    background-image: url("./catchcopy-bg.jpg");
+    background-size: cover;
+    box-shadow: 3px 3px 3px 0 #4949491e;
+}
+.catchcopy h1{
+    text-align: center;
+    font-size: 64px;
+    color: #272542;
+}
+
+/*main*/
+
+.news-list{
+    box-shadow: 3px 3px 5px 0 #4949494f;
+    padding: 10px 0 10px 20px;
+    border-radius: 10px;
+    margin: 20px 20px 0 20px;
+    background-color: rgb(247, 255, 248);
+    list-style: none;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px 8px 8px;
+}
+    .card{
+        margin: 10px;
+        min-width: 320px;
+        max-width: 500px;
+        height: 300px;
+        flex-grow: 1;
+
+        border-radius: 0.3rem;
+        background-color: #eaffee;
+        box-shadow: 3px 3px 3px 0 #4949491e;
+        background-size: cover;
+    }
+    .card a{
+        text-decoration: none;
+    }
+    .numbar{
+        background-color: white;
+        margin: 5px 0 0 5px;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        border-radius: 50%;
+        border: 0.5px solid black;
+    }
+    .card h4{
+        text-align: center;
+        margin-top: 200px;
+        background-color: #b9fcbd;
+        padding-top: 10px;
+        padding-bottom: 35px;
+        border-radius: 0 0 0.3rem 0.3rem;
+
+    }
+
+.ounantusin div{
+    border-radius: 10px;
+    margin: 20px 20px 0 20px;
+    background-color: #f7fff8;
+    box-shadow: 3px 3px 5px 0 #4949494f;
+    padding: 10px 0 10px 0;
+}
+    .ounantusin div h4{
+        margin-left: 5%;
+    }
+    .ounantusin div ul{
+        list-style: none;
+        display: flex;
+    }
+    .ounantusin div ul li{
+        margin-left: 5%;
+    }
+/*@main*/
+
+.contact img{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px 0 #4949495b;
+}
+
+/*footer*/
+footer{
+    background-color: #e0ffe2;
+    text-align: center;
+}
+/*@footer*/
+
+@media screen and (max-width: 767px) {
+
+    html{
+        font-size: 32px;
+    }
+}
