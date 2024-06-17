@@ -14,13 +14,20 @@ h2{
     color: #000000;/*文字色*/
     border-left: solid 5px #0c7a1b;/*左線*/
 }
+input{
+    margin-left: 10px;
+    height: 1.5rem;
+    border: none;
+    border-bottom: #0c7a1b solid 2px;
+    background-color: #eaffeab0;
+}
 
 
 body,html{
     margin: 0;
     font-family: 'Zenkurenaido', sans-serif;
     font-size: 16px;
-    background-color: rgba(234, 255, 234, 0.692);
+    background-color: #eaffeab0;
 }
 
 /*header*/
