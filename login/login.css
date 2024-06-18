@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: Zenkurenaido;
+    font-display: swap;
+    src: url("../ZenKurenaido-Regular.ttf") format("TrueType");
+}
+
+body,html{
+    margin: 0;
+    font-family: 'Zenkurenaido', sans-serif;
+    font-size: 16px;
+    background-color: rgba(234, 255, 234, 0.692);
+}
+
+header{
+    background-color: #ffffffaa;
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+}
+    header h1{
+        margin: 0;
+    }
+    header a{
+        margin: auto 20px auto auto;
+        text-decoration: none;
+        color: #000;
+    }
+
+form{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    max-width: 50%;
+    text-align: center;
+    padding: 10%;
+    background-color: aliceblue;
+}
+
+form input{
+    width: 100%;
+}
