@@ -20,8 +20,12 @@
 
         <div class="form_bg">
             <form action="" method="POST">
-               <input id="signin-id" name="username" type="text" placeholder="ユーザー名 または メールアドレス">
-                <input id="signin-pass" name="password" type="text" placeholder="パスワード">
+                <select name="department id="department">
+                    <option value="admin" selected>管理者(開発者)</option>
+                    <option value="library">図書委員</option>
+                    <option value="teacher">先生</option>
+                </select>
+                <input id="pass" name="password" type="password" placeholder="パスワード">
                 <button class="form-button" name="signin">ログインする</button>
             </form>
         </div>
