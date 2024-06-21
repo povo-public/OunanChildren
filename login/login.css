@@ -61,6 +61,10 @@ form input{
     border-radius: 1.5rem;
 }
 
+.error_text{
+    color: red;
+}
+
 form button{
     font-size: 1.25rem;
     width: 100%;

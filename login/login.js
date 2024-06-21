@@ -1,15 +1,21 @@
-var pushButton = function(){
-    var pass_hash;
-    sha256('password').then(hash => hash_ivent(hash))
-    console.log(pass_hash)
-    if(pass_hash == ''){
+var pass_hash;
 
+var pushButton = function(){
+    let pass_input = document.getElementById('pass');
+    sha256(pass_input.value).then(hash => hash_ivent(hash));
+    if(pass_hash == '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8'){
+        window.location.href = '../admin/index.html';
+    }else{
+        let error_text = document.createElement('small');
+        error_text.className = 'error_text';
+        error_text.textContent = '入力内容が不正です';
+        pass_input.after(error_text);
     }
-    window.location.href = '../admin/index.html';
 };
 
 function hash_ivent(hash){
-    pass_hash = hash
+    pass_hash = hash;
+    return;
 }
 
 async function sha256(text){
