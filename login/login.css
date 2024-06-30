@@ -64,7 +64,7 @@ form input{
     box-shadow: inset 1px 1px 5px 0 #00000065;
 }
 
-.error_text{
+#error_text{
     color: red;
 }
 

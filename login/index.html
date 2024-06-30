@@ -19,13 +19,14 @@
         </header>
 
         <div class="form_bg">
-            <form action="" method="POST">
+            <form>
                 <select name="department id="department">
                     <option value="admin" selected>管理者(開発者)</option>
                     <option value="library">図書委員</option>
                     <option value="teacher">先生</option>
                 </select>
                 <input id="pass" name="password" type="password" placeholder="パスワード">
+                <small id="error_text"></small>
                 <button type="button" onclick="pushButton()">ログインする</button>
             </form>
         </div>

@@ -1,15 +1,16 @@
 var pass_hash;
 
 var pushButton = function(){
+    let error_text = document.getElementById('error_text');
+    error_text.value = '';
+
     let pass_input = document.getElementById('pass');
     sha256(pass_input.value).then(hash => hash_ivent(hash));
+    
     if(pass_hash == '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8'){
         window.location.href = '../admin/index.html';
     }else{
-        let error_text = document.createElement('small');
-        error_text.className = 'error_text';
-        error_text.textContent = '入力内容が不正です';
-        pass_input.after(error_text);
+        error_text.value = '入力内容が不正です';
     }
 };
 
