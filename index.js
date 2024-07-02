@@ -1,9 +1,9 @@
 window.onload = function () {
     const storage = localStorage;
-    storage.getItem('key')
-    if(Number.isInteger(storage.getItem('key')/853) || storage.getItem('key') != null){
-        
-    }else{
+    if(!Number.isInteger(storage.getItem('kagi')/853)){
         window.location.href = './login/index.html';
-    }
+    };
+    if(storage.getItem('kagi') == null){
+        window.location.href = './login/index.html';
+    };
 };

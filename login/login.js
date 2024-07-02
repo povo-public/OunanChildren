@@ -9,11 +9,9 @@ var pushButton = function(){
     if(pass_hash == '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8'){
         /*キーを作り保存する*/
         //const storage = localStorage; //LocalStrageを定義
-        var random = Math.floor( Math.random() * 100000); //乱数発生
+        var random = Math.floor( Math.random() * 73917287314); //乱数発生
         var key = random * 853; //キー化
-        console.log(key);
-        localStorage.key = String(key); //保存
-        console.log(localStorage.getItem('key'));
+        localStorage.setItem("kagi",key);
 
         /*トップページへ飛ぶ*/
         window.location.href = '../index.html';
