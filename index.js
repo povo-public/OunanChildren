@@ -1,7 +1,8 @@
 window.onload = function () {
     const storage = localStorage;
-    if(Number.isSafeInteger(storage.getItem('key')/853)){
-
+    storage.getItem('key')
+    if(Number.isInteger(storage.getItem('key')/853) || storage.getItem('key') != null){
+        
     }else{
         window.location.href = './login/index.html';
     }
