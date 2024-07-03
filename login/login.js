@@ -1,17 +1,17 @@
 var pass_hash;
 
 var pushButton = function(){
-    document.getElementById('error_text').textContent = '';
+    document.getElementById('error_text').textContent = '';//エラー表示のクリア
 
     let pass_input = document.getElementById('pass');
-    sha256(pass_input.value).then(hash => hash_ivent(hash));
+
+    sha256(pass_input.value).then(hash => hash_ivent(hash));//入力された文字のハッシュ化
     
-    if(pass_hash == '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8'){
+    if(pass_hash == '928ec81630eb87325aa5202f23809cfa8c86c798680826d57f8657b650d2f64a'){
         /*キーを作り保存する*/
-        //const storage = localStorage; //LocalStrageを定義
         var random = Math.floor( Math.random() * 73917287314); //乱数発生
         var key = random * 853; //キー化
-        localStorage.setItem("kagi",key);
+        localStorage.setItem("kagi",key);//LocalStrageに保存
 
         /*トップページへ飛ぶ*/
         window.location.href = '../index.html';
@@ -20,11 +20,14 @@ var pushButton = function(){
     }
 };
 
+/*ハッシュ化文字列の代入*/
 function hash_ivent(hash){
     pass_hash = hash;
     return;
 }
 
+
+/*ハッシュ化関数*/
 async function sha256(text){
     const uint8  = new TextEncoder().encode(text)
     const digest = await crypto.subtle.digest('SHA-256', uint8)
