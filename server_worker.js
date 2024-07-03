@@ -1,7 +1,7 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'Ounan_seito_cache';
 var urlsToCache = [
-    '/povo-public.github.io/OunanChildren/',
+    'povo-public.github.io/OunanChildren/',
 ];
 
 // インストール処理
