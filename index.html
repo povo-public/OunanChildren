@@ -154,15 +154,21 @@
         </a>
 
         <footer>
-          <p class="copyright">©Kogo Takemura</p>各サービスの画像などの著作権は各サービス提供者にあります
+          <p class="copyright">©Kogo Takemura</p>各サービスや、その画像などの著作権は各サービス提供者にあります
         </footer>
 
         <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener("load", function() {
-                navigator.serviceWorker.register('server_worker.js');
-            });
-        }
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
+        // Service Workerの登録に成功
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+        // Service Workerの登録に失敗
+        console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+    }
         </script>
     </body>
 </html>

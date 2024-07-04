@@ -2,7 +2,8 @@
     "short_name": "OCW",
     "name": "Ounan Childrens Web",
     "display": "standalone",
-    "start_url": "../index.html",
+    "start_url": "https://povo-public.github.io/OunanChildren/index.html",
+    "theme_color": "#e0ffe2",
     "background_color": "#e0ffe2",
     "icons": [
         {
