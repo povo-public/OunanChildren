@@ -9,10 +9,10 @@
 
 /*ノーマライズ*/
 h2{
-    background-color: #b9fcbd;
+    background-color: #f1f0e2;
     padding: 0.25em 0.5em;/*上下 左右の余白*/
-    color: #000000;/*文字色*/
-    border-left: solid 5px #0c7a1b;/*左線*/
+    color: #354519;/*文字色*/
+    border-left: solid 5px #cbc3b2;/*左線*/
 }
 
 
@@ -20,13 +20,19 @@ body,html{
     margin: 0;
     font-family: 'Zenkurenaido', sans-serif;
     font-size: 16px;
-    background-color: rgba(234, 255, 234, 0.692);
+    background-color: #eaffeab0;
+    background-image: url('./bg.png');
+    background-size: cover; /*--背景画像のサイズ--*/
+    background-attachment: fixed; /*--背景画像の固定--*/
+    background-repeat: no-repeat; /*--背景画像の繰り返し--*/
+    background-position: center center; /*--背景画像の位置--*/
 }
 
 /*header*/
 header{
     background-color: #ffffffaa;
     position: fixed;
+    top: 0;
     width: 100%;
     padding-left: 10px;
     display: flex;
@@ -43,27 +49,17 @@ header{
 
 /*@header*/
 
-.catchcopy{
-    padding: 20vh 0 20vh 0;
-    margin: 0;
-    background-image: url("./catchcopy-bg.jpg");
-    background-size: cover;
-    box-shadow: 3px 3px 3px 0 #4949491e;
-}
-.catchcopy h1{
-    text-align: center;
-    font-size: 64px;
-    color: #272542;
-}
-
 /*main*/
+.news{
+    margin-top: 50px;
+}
 
 .news-list{
     box-shadow: 3px 3px 5px 0 #4949494f;
     padding: 10px 0 10px 20px;
     border-radius: 10px;
     margin: 20px 20px 0 20px;
-    background-color: rgb(247, 255, 248);
+    background-color: #f7fff8;
     list-style: none;
 }
 
@@ -98,8 +94,10 @@ header{
     }
     .card h4{
         text-align: center;
+        font-size: 1.25em;
         margin-top: 200px;
-        background-color: #b9fcbd;
+        color: #354519;
+        background-color: #cbc3b2;
         padding-top: 10px;
         padding-bottom: 35px;
         border-radius: 0 0 0.3rem 0.3rem;
@@ -137,7 +135,7 @@ header{
 
 /*footer*/
 footer{
-    background-color: #e0ffe2;
+    background-color: #f1f0e2;
     text-align: center;
 }
 /*@footer*/
