@@ -20,17 +20,11 @@ body,html{
     margin: 0;
     font-family: 'Zenkurenaido', sans-serif;
     font-size: 16px;
-    background-color: #eaffeab0;
-    background-image: url('./bg.png');
-    background-size: cover; /*--背景画像のサイズ--*/
-    background-attachment: fixed; /*--背景画像の固定--*/
-    background-repeat: no-repeat; /*--背景画像の繰り返し--*/
-    background-position: center center; /*--背景画像の位置--*/
 }
 
 /*header*/
 header{
-    background-color: #ffffffaa;
+    background-color: #8ea03b;
     position: fixed;
     top: 0;
     width: 100%;
@@ -38,29 +32,33 @@ header{
     display: flex;
     text-align: center;
 }
+    header h1 img{
+        height: 1em;
+        width: 1em;
+        object-fit: cover;
+    }
     header h1{
         margin: 0;
-    }
-    header a{
-        margin: auto 20px auto auto;
-        text-decoration: none;
-        color: #000;
+        font-size: 2em;
     }
 
 /*@header*/
 
 /*main*/
-.news{
-    margin-top: 50px;
+.cachcopy_bg{
+    background-image: url(./bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10vh 10% 10vh 10%;
 }
-
-.news-list{
-    box-shadow: 3px 3px 5px 0 #4949494f;
-    padding: 10px 0 10px 20px;
-    border-radius: 10px;
-    margin: 20px 20px 0 20px;
-    background-color: #f7fff8;
-    list-style: none;
+.cachcopy{
+    margin: 0;
+    font-size: 3em;
+    min-width: 6em;
+    max-width: 10em;
+    padding: 40px 7% 40px 7%;
+    background-color: #ccc3b3;
 }
 
 .links{
@@ -70,8 +68,7 @@ header{
 }
     .card{
         margin: 10px;
-        min-width: 320px;
-        max-width: 500px;
+        width: 320px;
         height: 300px;
         flex-grow: 1;
 
@@ -103,6 +100,15 @@ header{
         border-radius: 0 0 0.3rem 0.3rem;
 
     }
+
+.news-list{
+    box-shadow: 3px 3px 5px 0 #4949494f;
+    padding: 10px 0 10px 20px;
+    border-radius: 10px;
+    margin: 20px 20px 0 20px;
+    background-color: #f7fff8;
+    list-style: none;
+}
 
 .ounantusin div{
     border-radius: 10px;
