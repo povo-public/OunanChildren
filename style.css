@@ -12,7 +12,8 @@ h2{
     background-color: #f1f0e2;
     padding: 0.25em 0.5em;/*上下 左右の余白*/
     color: #354519;/*文字色*/
-    border-left: solid 5px #cbc3b2;/*左線*/
+    border-radius: 1em;
+    box-shadow: 3px 3px 3px 0 #4949491e;
 }
 
 
@@ -32,14 +33,17 @@ header{
     display: flex;
     text-align: center;
 }
-    header h1 img{
-        height: 1em;
-        width: 1em;
-        object-fit: cover;
+    header img{
+        height: 2.2em;
+        width: 2.2em;
+        line-height: 1.3em;
     }
     header h1{
         margin: 0;
-        font-size: 2em;
+        font-size: 1em;
+        height: 1.3em;
+        line-height: 1.3em;
+        padding: 0.7em 0;
     }
 
 /*@header*/
@@ -87,7 +91,6 @@ header{
         height: 28px;
         text-align: center;
         border-radius: 50%;
-        border: 0.5px solid black;
     }
     .card h4{
         text-align: center;
